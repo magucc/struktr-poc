@@ -1,0 +1,16 @@
+appId: app.struktr.poc
+name: Login → Home preview
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Sign in"
+- takeScreenshot: screenshots/01-login
+- tapOn:
+    id: "app.struktr.poc:id/email"
+- eraseText
+- inputText: "demo@struktr.app"
+- hideKeyboard
+- takeScreenshot: screenshots/02-login-filled
+- tapOn: "Sign in"
+- assertVisible: "Welcome"
+- takeScreenshot: screenshots/03-home
