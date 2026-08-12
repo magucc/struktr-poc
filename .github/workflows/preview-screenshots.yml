@@ -21,6 +21,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: magucc/struktr@main
+      - uses: magucc/struktr@v1
         with:
           apk-path: app/build/outputs/apk/debug/app-debug.apk
