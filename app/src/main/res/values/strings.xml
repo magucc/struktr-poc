@@ -7,7 +7,7 @@
     <string name="sign_in">Sign in</string>
     <string name="welcome_title">Welcome</string>
     <string name="welcome_user">demo@struktr.app · mock session</string>
-    <string name="card_pipeline">✅ Label-triggered pipeline: emulator boots, flow runs, screenshots land on the PR</string>
+    <string name="card_pipeline">🚀 This card changed in the PR — the gallery below proves it</string>
     <string name="card_flow">📱 This screen was captured by a Maestro flow defined in .maestro/preview/</string>
     <string name="card_ios">🍎 iOS leg: later (EC2 Mac on credits)</string>
 </resources>
