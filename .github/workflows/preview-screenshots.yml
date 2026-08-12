@@ -80,6 +80,11 @@ jobs:
             adb shell am broadcast -a com.android.systemui.demo -e command notifications -e visible false
             adb install app/build/outputs/apk/debug/app-debug.apk
             maestro test .maestro/preview/login-flow.yaml
+            mkdir -p screenshots
+            echo "--- locating captured PNGs ---"
+            find "$HOME/.maestro" "$GITHUB_WORKSPACE" -name '*.png' -not -path '*/build/*' 2>/dev/null || true
+            find "$HOME/.maestro" -name '*.png' -exec cp -v {} screenshots/ \; 2>/dev/null || true
+            ls -la screenshots/
 
       - name: Upload screenshots artifact
         if: always()
