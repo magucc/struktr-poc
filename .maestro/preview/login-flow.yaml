@@ -13,4 +13,6 @@ name: Login → Home preview
 - takeScreenshot: screenshots/02-login-filled
 - tapOn: "Sign in"
 - assertVisible: "Welcome"
+- waitForAnimationToEnd:
+    timeout: 3000
 - takeScreenshot: screenshots/03-home
